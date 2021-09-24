@@ -42,4 +42,4 @@ location /
 }
 ```
 
-Then you can use it by hitting your proxy URL `http://domain.com:3000/?url=[your_url]`
+Then you can use it by hitting your proxy URL `http://domain.com:8080/?url=[your_url]`
