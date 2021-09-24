@@ -10,7 +10,7 @@ function onRequest(req, res) {
     if (queryData.url) {
         request({
             url: queryData.url + '?d=mp'
-        }).on('error', function(e) {
+        }).on('error', function (e) {
             res.end(e);
         }).pipe(res);
     }
