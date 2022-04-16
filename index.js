@@ -9,12 +9,12 @@ function onRequest(req, res) {
     var queryData = url.parse(req.url, true).query;
     if (queryData.url) {
         request({
-            url: queryData.url + '?d=mp'
-        }).on('error', function (e) {
+            url: queryData.url.replace(/.*libravatar\.org\/avatar\/(.*)/g, 'https://sdn.geekzu.org/avatar/$1?d=mp')
+        }).on('error', function(e) {
             res.end(e);
         }).pipe(res);
     }
     else {
-        res.end("no url found");
+        res.end("No url found.");
     }
 }
