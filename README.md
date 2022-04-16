@@ -1,7 +1,7 @@
-HTTP Proxy
-======================
+HTTP Proxy for Waline avatar
+=============================
 
-This is a proxy server using [request](https://github.com/request/request) that handles redirects. 
+This is a proxy server using [request](https://github.com/request/request) that handles redirects for avatars in Waline comments system. 
 
 ## Quick start
 
